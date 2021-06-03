@@ -10,6 +10,8 @@ import 'package:progra3_proyecto_final/widgets/button.dart';
 import 'package:progra3_proyecto_final/widgets/check_box_label.dart';
 import 'package:progra3_proyecto_final/widgets/custom_input.dart';
 
+
+//Clase para crear la pantalla donde se crearan nuevas cuentas
 class NewUser extends StatefulWidget{
   @override
   State<StatefulWidget> createState() {
@@ -20,10 +22,9 @@ class NewUser extends StatefulWidget{
 }
 
   class _NewUser extends State<NewUser>{
-  ClientController clientController = new ClientController();
 
 
-
+    //Parametros de la clase
     final _controllerUser = TextEditingController();
     final _controllerEdad = TextEditingController();
     final _controllerEmail = TextEditingController();
@@ -229,6 +230,7 @@ class NewUser extends StatefulWidget{
 
 
   }
+  //Metodo para verficar que todos los campos de texto hayan sido llenados
   bool complete(){
     if(_controllerEmail.text == "" || _controllerUser.text == "" || _controllerCountry.text == "" || _controllerPassword.text == "" || _controllerRePassword.text == "" || _controllerEdad.text == "" || f==false &&  m==false)
       {
@@ -239,25 +241,32 @@ class NewUser extends StatefulWidget{
     return true;
   }
 
+  //Metodo para crear una nueva cuenta
   void crear(){
+    //si todos los campos estan completos
     if(complete()==true){
+      //entonces si la contraseña es la misma en el campo de contraseña como en el de verficar contraseña
       if(_controllerPassword.text==_controllerRePassword.text){
         if(f==true){
+          //si la checkbox mujer esta seleccionada osea su valor es true entonces llamaremos el navigator para pasar a la pantalla de plan screen y le pasamos los parametros de este form
           Navigator.push(
               context,
-              MaterialPageRoute(builder: (BuildContext context) => PlanScreen(name: _controllerUser.text,password: _controllerPassword.text,country: _controllerCountry.text,age: _controllerEdad.text,sexo: "Mujer",)));
+              MaterialPageRoute(builder: (BuildContext context) => PlanScreen(name: _controllerUser.text,password: _controllerPassword.text,country: _controllerCountry.text,age: _controllerEdad.text,sexo: "Mujer",email: _controllerEmail.text,)));
         }else if(m==true){
+          //si la checkbox hombre esta seleccionada osea su valor es true entonces llamaremos el navigator para pasar a la pantalla de plan screen y le pasamos los parametros de este form
           Navigator.push(
               context,
               MaterialPageRoute(builder: (BuildContext context) => PlanScreen(name: _controllerUser.text,password: _controllerPassword.text,country: _controllerCountry.text,age: _controllerEdad.text,sexo: "Hombre",email: _controllerEmail.text,)));
         }
       }else{
+        //si las contraseñas no coinciden lanzaremos un warning
         Navigator.push(
             context,
             MaterialPageRoute(builder: (BuildContext context) => Warning(text: "Las contraseñas no coinciden",)));
 
       }
     }else{
+      //si falta algun campo por llenar
       Navigator.push(
           context,
           MaterialPageRoute(builder: (BuildContext context) => Warning(text: "Completa todos los campos",)));

@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 
+
+
+//Widget de tipo Input text personalizado
 class TextInputCustom extends StatelessWidget{
 
+  //parametros de la clase
   final String hintText;
   final TextEditingController controller;
   final TextInputType inputType;
@@ -10,6 +14,7 @@ class TextInputCustom extends StatelessWidget{
   final bool show;
   bool enable= true;
 
+  //cosntructor
   TextInputCustom(
       {
         Key key,
@@ -23,6 +28,7 @@ class TextInputCustom extends StatelessWidget{
       }
       );
 
+  //codigo fuente del widget
   @override
   Widget build(BuildContext context) {
     // TODO: implement build

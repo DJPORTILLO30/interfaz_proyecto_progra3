@@ -8,6 +8,8 @@ import 'package:progra3_proyecto_final/controllers/pago_controller.dart';
 import 'package:progra3_proyecto_final/user/widgets/button.dart';
 import 'package:progra3_proyecto_final/widgets/custom_input.dart';
 
+//Alert Diaglos para crear el pago y crear en nuestra DB nuestro nuevo cliente y pago
+
 class PaymentPopUp extends StatelessWidget {
 
 
@@ -26,7 +28,9 @@ class PaymentPopUp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //Controlador de tipo cliente que tiene los metodos POST, PUT y DELETE de nuestra API
     ClientController clientController = new ClientController();
+    //Controlador de tipo pago que tiene los metodos POST, PUT y DELETE de nuestra API
     PagoController pagoController = new PagoController();
     return AlertDialog(
       backgroundColor: Color(0xFF040721),
@@ -73,7 +77,9 @@ class PaymentPopUp extends StatelessWidget {
           Navigator.of(context).pop();
         },color1: 0xFFFFFFFF,color2: 0xFFFFFFFF,width: 80, height: 30,color3: 0xFF000000,),
         Button(text: "Aceptar", onPressed: (){
+          //ocuapamos el metodo .addClient de nuestro controlador en el cual nos pide esos parametros
           clientController.addClient(name, age, sexo, country, "usuario", password,email);
+          //oucpamos el metodo .addPago de nuestro controlador
           pagoController.addPago("pendiente", _controllerTarjeta.text, monto);
           Navigator.of(context).pop();
         }, color1: 0xFFa2071d, color2: 0xFFd92e40,width: 100, height: 40,color3: 0xFFFFFFFF,),

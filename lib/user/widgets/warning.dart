@@ -2,6 +2,8 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:progra3_proyecto_final/user/widgets/button.dart';
 
+
+//Widget de tipo ALerDialog perosonalizado para darle avisos al usuario
 class Warning extends StatelessWidget {
 final String text;
 

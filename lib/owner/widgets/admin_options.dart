@@ -7,6 +7,8 @@ import 'package:progra3_proyecto_final/owner/screens/admin_plan_view.dart';
 import 'package:progra3_proyecto_final/owner/screens/admin_users_view.dart';
 import 'package:progra3_proyecto_final/widgets/button_with_icon.dart';
 
+
+//opcioens disponibles que tiene el administrador
 class AdminOptions extends StatefulWidget {
   const AdminOptions({Key key}) : super(key: key);
 

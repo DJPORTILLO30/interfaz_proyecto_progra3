@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-
+//app bar de la scren adminoptions
 class AdminAppBarOptions extends StatelessWidget {
   const AdminAppBarOptions({Key key}) : super(key: key);
 

@@ -20,6 +20,7 @@ class Content {
     this.date
   });
 
+  //metodo contstructor de la clase a traves de una interfaz
   factory Content.fromJson(Map<String, dynamic> json) {
     return Content(
       id: json['id'],

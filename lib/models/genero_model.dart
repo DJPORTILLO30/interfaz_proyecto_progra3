@@ -8,6 +8,7 @@ class Genero {
 
   Genero({this.id, this.nombre, this.descripcion, this.fecha});
 
+  //metodo contstructor de la clase a traves de una interfaz
   factory Genero.fromJson(Map<String, dynamic> json) {
     return Genero(
       id: json['id'],

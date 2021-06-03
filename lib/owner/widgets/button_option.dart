@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+//Widget que representara las acciones del administrador
 class ButtonOption extends StatefulWidget{
 
   double width = 0.0;

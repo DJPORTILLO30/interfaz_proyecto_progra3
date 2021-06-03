@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+
+//Widget para crear el fondo de nuestras screens
 class BackGround extends StatelessWidget {
   const BackGround({Key key}) : super(key: key);
 

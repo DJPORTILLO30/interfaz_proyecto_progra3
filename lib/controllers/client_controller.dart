@@ -7,6 +7,7 @@ import 'package:http/http.dart' as http;
 
 class ClientController {
 
+  //metodo para agregar un nuevo cliente
   Future<http.Response> addClient(String nameController,
       String ageController, String sexoController,String paisController,String rolController,String password,String email) async {
     var url = 'http://192.168.1.7:8080/cliente/';

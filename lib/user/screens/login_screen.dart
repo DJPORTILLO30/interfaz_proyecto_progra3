@@ -3,10 +3,8 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:progra3_proyecto_final/content/screens/content_cata.dart';
-import 'package:progra3_proyecto_final/content/screens/content_detail.dart';
 import 'package:progra3_proyecto_final/controllers/client_controller.dart';
 import 'package:progra3_proyecto_final/owner/screens/admin_screen.dart';
-import 'package:progra3_proyecto_final/planes/screens/plan_screen.dart';
 import 'package:progra3_proyecto_final/user/screens/new_user.dart';
 import 'package:progra3_proyecto_final/user/widgets/warning.dart';
 import 'package:progra3_proyecto_final/widgets/background.dart';
@@ -77,7 +75,7 @@ class LoginScreen extends StatelessWidget {
             child: ListView(
               children: <Widget>[
                 Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: <Widget> [
                     //email input
                     Container(

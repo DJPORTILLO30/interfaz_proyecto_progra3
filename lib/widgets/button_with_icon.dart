@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+//Widget creado a base de Container e Inkwell para crear un boton con Icono
 class ButtonWithIcon extends StatefulWidget{
 
   double width = 0.0;

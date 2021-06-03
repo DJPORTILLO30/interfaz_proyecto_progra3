@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+//Widget de checkbox personalizado
 class CheckBoxLabel extends StatelessWidget {
   const CheckBoxLabel({
     Key key,

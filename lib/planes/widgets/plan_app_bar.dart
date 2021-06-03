@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-
+//Widget que creara nuestra AppBar en la pantalla de los planes
 class PlanAppBar extends StatelessWidget {
   String title;
   PlanAppBar({Key key , this.title});

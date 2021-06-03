@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+//Widget para crear un boton con solo texto a traves de Inkwell y un contenedor
 class Button extends StatefulWidget{
 
   double width = 0.0;

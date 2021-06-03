@@ -13,6 +13,7 @@ class ContentCatolog extends StatefulWidget {
 }
 
 class _ContentCatologState extends State<ContentCatolog> {
+  //obtencion de la inforamcion de categorias a traves de un metodo HTTP definido en nuestra API
   Future<List> getData() async {
     final response = await http.get(Uri.parse("http://192.168.1.7:8080/categoria"));
     return json.decode(response.body);

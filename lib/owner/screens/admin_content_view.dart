@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:progra3_proyecto_final/content/widgets/content_card_list.dart';
 import 'package:progra3_proyecto_final/owner/widgets/admin_appbar_options.dart';
-import 'package:progra3_proyecto_final/owner/widgets/categoria/categoria_card_list.dart';
 import 'package:progra3_proyecto_final/owner/widgets/contenido/contenido_card_list.dart';
 import 'package:progra3_proyecto_final/widgets/background.dart';
 

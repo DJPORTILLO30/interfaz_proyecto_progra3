@@ -3,6 +3,7 @@ import 'package:progra3_proyecto_final/controllers/client_controller.dart';
 import 'package:progra3_proyecto_final/planes/widgets/payment.dart';
 import 'package:progra3_proyecto_final/widgets/button.dart';
 
+//Widget que mostrara la informacion de nuestros Planes que son obetenidos de la DB
 class Plan extends StatelessWidget {
   String planName;
   String planDescription;

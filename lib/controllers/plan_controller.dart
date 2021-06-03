@@ -5,6 +5,7 @@ import 'package:http/http.dart' as http;
 
 class PlanController {
 
+  //metodo para agregar un plan
   Future<http.Response> addPlan(String nameController,
       String descriptionController,String montoController) async {
     var url = 'http://192.168.1.7:8080/planes/';

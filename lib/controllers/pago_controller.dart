@@ -6,6 +6,7 @@ import 'package:http/http.dart' as http;
 
 class PagoController {
 
+  //metodo para agregar un nuevo pago
   Future<http.Response> addPago(String estadoController,
       String numTarjetaController,String montoController) async {
     var url = 'http://192.168.1.7:8080/pagos/';
@@ -66,6 +67,5 @@ class PagoController {
     print("${response.body}");
     return response;
   }
-
 
 }

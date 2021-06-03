@@ -3,6 +3,7 @@ import 'package:progra3_proyecto_final/planes/widgets/plan_app_bar.dart';
 import 'package:progra3_proyecto_final/planes/widgets/plan_list.dart';
 import 'package:progra3_proyecto_final/widgets/background.dart';
 
+//Pantalla donde mostraremos el contenido de nuestros planes
 class PlanScreen extends StatelessWidget {
   final String name;
   final String password;

@@ -13,6 +13,7 @@ class Cliente {
   Cliente({this.id, this.nombre, this.email, this.edad, this.sexo, this.pais,
       this.password, this.rol,this.fecha});
 
+  //metodo contstructor de la clase a traves de una interfaz
   factory Cliente.fromJson(Map<String, dynamic> json) {
     return Cliente(
       id: json['id'],

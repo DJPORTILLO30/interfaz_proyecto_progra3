@@ -9,6 +9,7 @@ class Pago {
 
   Pago({this.id, this.fecha, this.estado, this.monto, this.numTarjeta});
 
+  //metodo contstructor de la clase a traves de una interfaz
   factory Pago.fromJson(Map<String, dynamic> json) {
     return Pago(
       id: json['id'],

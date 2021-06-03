@@ -5,6 +5,7 @@ import 'package:http/http.dart' as http;
 
 class GenreController {
 
+  //metodo para agregar un genero
   Future<http.Response> addGenre(String nameController,
       String descriptionController) async {
     var url = 'http://192.168.1.7:8080/genero/';

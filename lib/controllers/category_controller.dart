@@ -5,6 +5,9 @@ import 'package:http/http.dart' as http;
 
 class CategoryController {
 
+
+
+  //metodo para agregar una nueva categoria
   Future<http.Response> addCategory(String nameController,
       String descriptionController) async {
     var url = 'http://192.168.1.7:8080/categoria/';

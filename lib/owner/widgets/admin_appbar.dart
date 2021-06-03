@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 
+//app bar de todas las views del administrador
 class AdminAppBar extends StatelessWidget {
   const AdminAppBar({Key key}) : super(key: key);
 

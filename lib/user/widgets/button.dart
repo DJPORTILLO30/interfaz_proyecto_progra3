@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+//Widget para crear un boton en la pantlla de login scren
 class Button extends StatefulWidget{
 
   double width = 0.0;

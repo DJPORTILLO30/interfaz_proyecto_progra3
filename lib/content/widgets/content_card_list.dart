@@ -1,7 +1,6 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:progra3_proyecto_final/models/content_model.dart';
 import 'content_card.dart';
 import 'package:http/http.dart' as http;
 

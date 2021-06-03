@@ -5,6 +5,7 @@ import 'package:http/http.dart' as http;
 
 class ContentController {
 
+  //metodo para agregar un contenido
   Future<http.Response> addContent(String nameController,
       String sumaryController, String idCategoriaController,
       String idGeneroController, String idvideoController,
